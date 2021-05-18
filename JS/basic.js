@@ -61,3 +61,39 @@
 
 // objects 
                     
+
+                    let person = {          // person is object
+                        name :'Rohan',
+                        age:21
+                    };
+
+                    //console.log(person);                //{ name: 'Rohan', age: 21 }
+
+                    // Dot notation
+                    // person.name = 'Sabale';     // changing the name of person object
+                    // console.log(person.name);       //Sabale
+
+                    // bracket notation
+                    // person['name'] = 'sabale';
+                    // console.log(person.name);       //sabale
+
+
+// Arrays
+
+                        let selectedColors = ['red' , 'blue'];        // array leterals , 
+                        //console.log(selectedColors);        //[ 'red', 'blue' ]
+
+
+// Functions        //set of statements that perform task or calcuates value
+
+                        function greet(name)        //  parameter
+                        {
+                            console.log('hello ' + name);
+                        }           // no semicolon at last of function
+
+                        //greet('rohan');            // argument    //hello rohan
+
+
+
+
+
