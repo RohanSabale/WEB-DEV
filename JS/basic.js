@@ -101,7 +101,7 @@
                                 // it gives access to whole asynchronous world in the synchronous single threaded language.
 
                                 // if any operation blocks the call stack that is known as blocking the main thread.
-                                
+
                               
 
                                 function x()
@@ -112,3 +112,5 @@
                                 {
                                     
                                 }
+
+                                
