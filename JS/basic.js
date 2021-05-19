@@ -95,5 +95,20 @@
 
 
 
+// Callback functions
+                                // functions are first class citizens in js , we can take function and pass  into another function
+                                // the function we pass is an call back function.
+                                // it gives access to whole asynchronous world in the synchronous single threaded language.
 
 
+                              
+
+                                function x()
+                                {
+                                    
+                                }
+
+                                x(function y())     // y is an callback function
+                                {
+                                    
+                                }
