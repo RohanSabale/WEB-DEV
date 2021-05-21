@@ -119,3 +119,69 @@
                                 
 
                                 
+// Road map
+// 1. Basics of the language
+//                                         javascript lexical structure
+//                                         javascript expressions
+//                                         javascript types 
+//                                         javascript variables
+//                                         javascript math oeprators
+//                                         javascript functions 
+//                                         javascript immediately - invoked function expressions IIFE 
+//                                         this
+//                                         javascript arrow functions
+//                                         javascript loops
+//                                         javascript loops and scope 
+//                                         javascript arrays
+//                                         javascript template literals 
+//                                         javascript semicolons
+//                                         strict mode 
+
+// 2. Built in objects
+//                                 javascript dates 
+//                                 the math object 
+                        
+// 3. asynchronous programming 
+//                                 asynchronous programming and callbacks
+//                                 javascript timers 
+//                                 javascript promises
+//                                 async and await
+
+// 4. events
+//                                 the javascript event loop
+//                                 javascript events
+
+// 5. data structure
+//                                 the javascript map data structure
+//                                 the javascript set data structure
+        
+// 6 . Advanced topics 
+                                    
+//                                     JavaScript Functional Programming
+//                                     Efficiently load JavaScript with defer and async
+//                                     CORS
+//                                     JavaScript Closures
+//                                     JavaScript Regular Expressions
+//                                     Unicode in JavaScript
+
+
+// ** How tos 
+                                
+//                                 Generate random and unique strings in JavaScript
+//                                 How to inspect a JavaScript object
+//                                 How to trim the leading zero in a number
+//                                 How to replace all occurrences of a string
+//                                 How to check if an object property is undefined
+//                                 How to append an item to an array
+//                                 How to remove a property from an object
+//                                 How to get the current timestamp
+//                                 How to convert a string to a number
+//                                 How to format a number as currency
+//                                 How to uppercase the first letter of a string
+//                                 How to deep clone an object
+//                                 How to remove an item from an array
+//                                 How to check if a string contains a substring
+
+                            
+                                        
+                                        
