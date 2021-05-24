@@ -34,3 +34,8 @@ let fs = require("fs");
 // remove folder
 // fs.rmdirSync("my directory");
 
+//fs.existsSync   -> if a file exist at a pth  - > true/false
+//fs.lstatSync   --> given path is of file or directory
+
+
+
