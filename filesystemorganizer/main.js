@@ -2,12 +2,15 @@ let inputArr = process.argv.slice(2);
 let fs = require("fs")
 let path = require("path");
 //console.log(inputArr);
-
-// node main.js tree "directoryPath"
-//node main.js organize "directoryPath"
-// node main.js help
-
 let command = inputArr[0];
+
+let types = {
+    media :[ "mp4" , "mkv"],
+    archives: ["zip" , '7z' , 'rar' , 'tar' , 'gz' , 'ar' ,'iso' ,'xz'],
+    documents:['docx' , 'doc' , 'pdf' , 'xlsx' ,'xls' , 'odt' , 'ods' , 'odp' , 'odg' ,'odf' ,'txt' , 'ps' , 'tex'],
+    app:['exe' , 'dmg' , 'pkg' , 'deb']  
+}
+
 switch(command)
 {
     case "tree":
@@ -23,7 +26,6 @@ switch(command)
         console.log("please use 🙏 input right commad");
         break;
 }
-
 function treeFn(dirPath)
 {
     console.log("tree comaand implemented for  " , dirPath);
@@ -57,11 +59,11 @@ function organizeFn(dirPath)
             return;
         }
     }
+    organizeHelper(dirPath , destPath);
+
     
 }
 
-//organizeHelper(dirPath , destPath);
-    //4. copy/cut files to that organized directory inside of any of category folder
 
 function organizeHelper(src,dest)
 {
@@ -71,10 +73,51 @@ function organizeHelper(src,dest)
     {
         let childAddress = path.join(src , childName[i]);
         let isFile = fs.lstatSync(childAddress).isFile();
+        if(isFile)
+        {
+            //console.log(childName[i]);
+            let category = getCategory(childName[i]);
+            console.log(childName[i] , "belongs to -->", category);
+                //4. copy/cut files to that organized directory inside of any of category folder
+            sendFiles(childAddress , dest , category);
+        }
     }
 
 }
 
+
+function sendFiles(srcFilePath , dest , category)
+{
+    let categoryPath = path.join(dest , category);
+    if(fs.existsSync(categoryPath) == false)
+    {
+        fs.mkdirSync(categoryPath);
+    }
+    let fileName = path.basename(srcFilePath);
+    let destFilePath = path.join(categoryPath , fileName);
+    fs.copyFileSync(srcFilePath , destFilePath );
+    fs.unlinkSync(srcFilePath);
+    console.log(fileName ,"copied to" ,category);
+}
+
+function getCategory(name)
+{
+    let ext = path.extname(name);
+    ext = ext.slice(1);
+    //console.log(ext);
+    for(let type in types)
+    {
+        let cTypeArray= types[type];
+        for(let i = 0;i<cTypeArray.length;i++)
+        {
+            if(ext == cTypeArray[i])
+            {
+                return type;
+            }
+        }
+        return "others";
+    }
+}
 
 function helpFn()
 {
