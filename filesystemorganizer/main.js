@@ -1,3 +1,6 @@
+// oroginal file --> https://github.com/Jasbir96/Practical_Web_Dev/tree/main/3.%20nodejs_project
+//shebang syntax
+
 let inputArr = process.argv.slice(2);
 let fs = require("fs")
 let path = require("path");
@@ -38,7 +41,8 @@ function organizeFn(dirPath)
     let destPath;
     if(dirPath == undefined)
     {
-        console.log("kindly enter the path");
+        destPath = process.cwd();
+        //console.log("kindly enter the path");
         return;
     } else
     {
@@ -61,7 +65,53 @@ function organizeFn(dirPath)
     }
     organizeHelper(dirPath , destPath);
 
-    
+  
+}
+
+function treeFn(dirPath)
+{
+    let destPath;
+    if(dirPath == undefined)
+    {
+        //console.log("kindly enter the path");
+        process.cwd();
+        treeHelper(process.cwd() , " ");
+        return;
+    } else
+    {
+        let doesExist  = fs.existsSync(dirPath);
+        if(doesExist)
+        {
+           treeHelper(dirPath, " ");
+        }
+        else
+        {
+            console.log("kindly enter the path");
+            return;
+        }
+    }
+}
+
+function treeHelper(dirPath, indent)
+{
+    //is file or folder
+    let isFile = fs.lstatSync(dirPath).isFile();
+    if(isFile == true)
+    {
+        let fileName  = path.basename(dirPath);
+        console.log(indent +"---" +fileName);
+    }
+    else
+    {
+        let dirName  = path.basename(dirPath);
+        console.log(indent + "----"+ dirName );
+        let childrens = fs.readdirSync(dirPath);
+        for(let i  =0 ;i<childrens.length;i++)
+        {
+            let childPath = path.join(dirPath , childrens[i]);
+            treeHelper(childPath , indent + "\t" );
+        }
+    }
 }
 
 
