@@ -14,7 +14,7 @@ switch(command)
         treeFn(inputArr[1]);
         break;
     case "organize":
-        organizeFn(inputArr[1]);
+        organizeFn(inputArr[1]) ;
         break;
     case "help":
         helpFn();
