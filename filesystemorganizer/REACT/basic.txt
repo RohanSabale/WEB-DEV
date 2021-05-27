@@ -1,0 +1,44 @@
+React is a library for building user interface
+
+react runs on the client as a SPA (single page app) , but can be used to build
+full stack app by communicating with as server/API (eg. MERN stack)
+
+React is often reffered to as a front end framework because it is capable and
+directly comaprable to a framework such as angular or Vue
+
+uses:
+1. structure the view layer of your application
+2. reusable components with their own state
+3. JSX = dynamic markup
+3. interactive UIs with virtual DOM
+4. performance and testing
+5. very popular in the industry
+
+
+fundamentals:
+datatypes , variables , functions , loops , etc 
+promises and asynchronous programming
+array methods like for each() and map()
+Fetch API and making HTTP requests
+
+Working with state
+--components can have state which is an object that detemines how a component
+renders and behaves
+
+"app" or "global" state refers to state that is available to the entire UI , 
+not just a single component
+
+earlier we use class based component to use state , now we use 
+functional component with hooks
+
+REACT HOOKS 
+
+React hooks are functions that let us hook into the React state and lifecycle 
+features from a function component
+
+* useState   - -returns a stateful value and function to update it
+*useEffect -- Perform side effects in function component
+* useContext ,useReducer , useRef
+
+we can create our own custom hooks
+
