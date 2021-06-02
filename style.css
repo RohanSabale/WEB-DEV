@@ -3,22 +3,25 @@
     padding: 0;
 }
 
-body{
-    background-color:aliceblue;
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(15, 26, 36);
+    background-size: cover;
+    position: absolute;
 }
 
-div.register{
-    width: 400 px;
-    margin: 100px auto 0px auto;
+
+
+.loginform{
+    width: 480 px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
 }
-div.register{
-    width:100%;
-    font-size: 18px;
-    border-radius: 10px;
-    border: 1px solid rgba(255,255,255,0.3);
-    box-shadow: 2px 2px 15 px;
-    rgba(0,0,0,0.3);
-}
+
 
 form #register
 {
