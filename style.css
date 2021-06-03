@@ -1,43 +1,82 @@
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
 }
 
-.main{
-    height: 100%;
-    width: 100%;
-    background-color: rgb(15, 26, 36);
+.hero{
+    margin-top: 40px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 950px;
+    /* height: 100%;
+    width: 100%; */
+    background-position: center;
     background-size: cover;
-    position: absolute;
 }
 
-
-
-.loginform{
-    width: 480 px;
-    height: 480px;
-    position: relative;
-    margin: 6% auto;
-    background: #fff;
-    padding: 5px;
-}
-
-
-form #register
+.form-box
 {
-    margin: 40 px;
+    width: 380px;
+    height: 480px;
+    /* right: 1; */
+    display: block;
+    /* position: absolute; */
+    margin: 40px 0 0 0;
+    background-color: #ddd;
+    border-radius: 30px;
+    border-color: #ff61241f;
+    padding: 20px;
 }
 
-label{
-    font-family:Arial, Helvetica, sans-serif
-    font-size: 18px;
+.button-box
+{
+    width: 220 px;
+    margin: 35 px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
 }
+
+.toggle-btn
+{
+    padding: 10px 70px;
+    cursor: pointer;
+    background:transparent;
+    border: 0;
+    color:black;
+    outline: none;
+    position: relative;
+}
+#btn{
+    top:0;
+    left: 0;
+    position:absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to-right,#ff105f,#ffad06);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between ;
+    align-items: center;
+}
+nav img{
+    position:fixed;
+    top:0;
+    left:0;
+    width:110px;  
+}
+
 
 input#name
 {
     width: 300px;
     border:1px solid #ddd;
-    border-radius: 3px;
+    border-radius: 15px  ;
     outline:0;
     padding: 7px;
     background-color: #fff;
@@ -59,4 +98,3 @@ input #Submit{
     border: 1px solid rgba(255,255,255,0.3);
     box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
 }
-
