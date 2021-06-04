@@ -8,7 +8,7 @@
 <body>
     <img src ="eberhead.jpg" class="middle_image">
     <nav>
-        <a href="index.html"><img src="jpg-file-icon-logo-element-illustration-design-155443757.jpg"></a>
+        <a href="index.html"><img src="twitter-logo.webp"></a>
     </nav>
 
     <div class = "form-box">
@@ -19,15 +19,23 @@
     </div>
 
     <form id = "register" method = "post">
-        <label>First Name : </label>
+
+        <small id="name_inline">First name</small>
+        <small id = "name_inline"> Last name</small>
+        <br><br>
+        <input type="text" name = "fname" id = "name1">
+        <input type="text"name = "lname" id ="name1">
+        <br><br>
+
+        <!-- <label>First Name : </label>
         <br>
-        <input type=" text "name = "fname" id="name" >
+        <input type=" text "name = "fname" id="name1" >
         <br><br>
 
         <label > Last Name :</label>
         <br>
-        <input type=" text "name = "lname" id="name" >
-        <br><br>
+        <input type=" text "name = "lname" id="name1" >
+        <br><br> -->
         
         <label> Work Email:</label>
         <br>
@@ -39,7 +47,19 @@
         <input type="text" name="cnumber" id="name" >
         <br><br>
 
-        <label>Designation: </label>
+
+
+        <small id="designation_inline">Designation:</small>
+        <small id = "designation_inline">Company name:</small>
+        <br><br>
+        <input type="text" name = "designation" id = "designation">
+        <input type="text"name = "company_name" id ="designation">
+        <br><br>
+
+
+
+
+        <!-- <label>Designation: </label>
         <br>
         <input type="text" name="designation" id="name" >
         <br><br>
@@ -47,11 +67,11 @@
         <label>Company name :</label>
         <br>
         <input type="text" name="cname" id="name" >
-        <br><br>
+        <br><br> -->
 
         <label for="category">category:</label>
         <br>
-        <select name="category" id="name"></select>
+        <select name="category" id="category"></select>
         <br><br>
 
     </form>

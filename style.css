@@ -45,7 +45,7 @@
     padding: 10px 70px;
     cursor: pointer;
     width: 220 px;
-    background-color:gray;
+    background-color: #ddd;
     border: 0;
     color:rgb(102, 16, 16);
     outline: none;
@@ -58,7 +58,7 @@
     padding: 10px 70px;
     cursor: pointer;
     width: 220 px;
-    background-color: rgb(94, 16, 16);
+    background-color:#ddd;
     border: 0;
     color:rgb(102, 16, 16);
     outline: none;
@@ -89,9 +89,55 @@ nav img{
 }
 
 
+.name_inline
+{
+    display: inline-block;
+    padding: 5px;
+}
+input#name1{
+    display: inline-block;
+    border-radius: 15px;
+    border:1px solid #ddd;
+    width: 153px;
+    background-color: #fff;
+    outline:0;
+    padding: 7px;
+    box-shadow: inset 1px 1px 5px
+    rgba(0,0,0,0.3);
+}
+
+.designation_inline{
+    display: inline-block;
+    padding: 5px;
+}
+input#designation{
+    display: inline-block;
+    border-radius: 15px;
+    border:1px solid #ddd;
+    width: 153px;
+    background-color: #fff;
+    outline:0;
+    padding: 7px;
+    box-shadow: inset 1px 1px 5px
+    rgba(0,0,0,0.3);
+
+}
+#category{
+    width:350px;
+    display: inline-block;
+    border-radius: 15px;
+    border:1px solid #ddd;
+    background-color: #fff;
+    outline:0;
+    padding: 7px;
+    box-shadow: inset 1px 1px 5px
+    rgba(0,0,0,0.3);
+}
+
+
 input#name
 {
-    width: 300px;
+    width: 350px;
     border:1px solid #ddd;
     border-radius: 15px  ;
     outline:0;
@@ -107,5 +153,8 @@ input#name
     padding: 10px 50px;
     color: white;
     font-size: medium;
-    background-color: #ddd;
+    background-color:rgb(115, 115, 192);
+    box-shadow: inset 1px 1px 5px
+    rgba(0,0,0,0.3);
+    outline: 0;
 }
