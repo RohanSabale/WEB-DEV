@@ -1,0 +1,22 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.twitter
+{
+    top:0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+}
+
+
+
+.register{
+    background-color: aquamarine;
+    width: 100%;
+    border-radius: 5px;
+    margin: 75px 50px 75px 200px;
+    
+}
